@@ -1,13 +1,13 @@
 const chai = require('chai');
 const should = chai.should();
-const insert = require('./insert.js');
+const insertion = require('./insertion.js');
 const array = require('../../../array.js');
 
 chai.use(require("chai-sorted"));
 
-describe('Bubble sort', () => {
+describe('Insertion sorting algorithm', () => {
   it('Should return sorted array', () => {
-    const sorted = insert(array);
-    sorted.should.be.sorted();
+    array.insertionSort = insertion;
+    array.insertionSort().should.be.sorted();
   })
 })

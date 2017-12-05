@@ -5,9 +5,9 @@ const array = require('../../../array.js');
 
 chai.use(require("chai-sorted"));
 
-describe('Bubble sort', () => {
+describe('Bubble sort algorithm', () => {
   it('Should return sorted array', () => {
-    const sorted = bubble(array);
-    sorted.should.be.sorted();
+    array.bubbleSort = bubble;
+    array.bubbleSort().should.be.sorted();
   })
 })

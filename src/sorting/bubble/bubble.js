@@ -1,5 +1,5 @@
-module.exports = function bubbleSort(array) {
-  const sorted = [...array];
+module.exports = function bubbleSort() {
+  const sorted = [...this];
   const length = sorted.length;
   for(let i = 0; i < length - 1; i++) {
     for(let j = i + 1; j < length; j++) {
