@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha \"./src/**/*.test.js*\""
+    "test": "mocha -s 0 \"./src/**/*.test.js*\""
   },
   "author": "",
   "license": "ISC",
