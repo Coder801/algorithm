@@ -21,17 +21,5 @@ module.exports = function binarySearch(array, needle){
     } else {
       return index;
     }
-
   }
-
-  // if(array[index] === needle) {
-  //   return index;
-  // } else {
-  //   console.log(index);
-  //   if(array[index] > needle) {
-  //     return binarySearch(array.slice(0, index), needle);
-  //   } else {
-  //     return binarySearch(array.slice(index + 1), needle) + index;
-  //   }
-  // }
 }
